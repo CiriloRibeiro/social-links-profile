@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 100%);
+    font-size: 14px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Inter";
+    font-weight: 400;
+}
+
+.container {
+    max-width: 90%;
+    width: 350px;
+    background: hsl(0, 0%, 12%);
+    border-radius: 10px;
+    padding: 1.25rem;
+    margin: 0 auto;
+    text-align: center; 
+}
+
+img{
+    border-radius: 50%;
+    width: 30%;
+    height: auto;
+    margin: 1rem;
+}
+
+.about {
+    margin-bottom: 0.8rem;
+}
+
+.about h1 {
+    padding: 0.5rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.about h2 {
+    color: hsl(75, 94%, 57%);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.description {
+    padding: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    font-weight: 700;
+    font-family: 'Inter';
+    color: white;
+    background: hsl(0, 0%, 20%);
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    padding: 0.7rem;
+    margin: 0.35rem 0.5rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 20%);
+}
+
+/* Media query for small screens */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+}
+
+/* Media query for extra small screens */
+@media (max-width: 400px) {
+    .container {
+        width: 100%;
+        max-width: none;
+    }
+    img {
+        width: 50%; /* Adjusted for smaller screens */
+    }
+}
